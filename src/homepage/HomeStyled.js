@@ -1,17 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HomePage = styled.main`
-padding-top: 3rem;
-padding-bottom: 2rem;
-overflow: hidden;
-text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    text-align: center;
 
     #header {
-
         h1 {
             letter-spacing: 0.4px;
             margin-bottom: 0.8rem;
-            
+
             span {
                 color: var(--color);
             }
@@ -25,13 +24,10 @@ text-align: center;
                 opacity: 1;
             }
         }
-        
     }
 
     #footer {
-
         p {
-            text-transform: uppercase;
             letter-spacing: 0.6px;
 
             a {
@@ -48,11 +44,11 @@ text-align: center;
 `;
 
 export const HomeWrapper = styled.main`
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 3rem;
-margin-top: 5rem;
-margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
 
     @media (max-width: 576px) {
         grid-template-columns: 1fr;
@@ -62,7 +58,7 @@ margin-bottom: 6rem;
         height: 480px;
         border: 1px solid #333;
         overflow: hidden;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         transition: border-color 0.3s ease;
 
         &:hover {
@@ -76,7 +72,6 @@ margin-bottom: 6rem;
         width: 100%;
         height: 85%;
         overflow: hidden;
-
 
         iframe {
             width: 100%;
